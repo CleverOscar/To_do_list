@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import Todo from './Components/Todo.jsx';
+import TodoList from './Components/TodoList.jsx';
 
 class App extends React.Component {
   constructor(props){
@@ -8,8 +8,8 @@ class App extends React.Component {
     this.state ={
       todos:[
               {id:1, task: 'Take out the trash', complete: false},
-              {id:2, task: 'Take out the trash', complete: false},
-              {id:3, task: 'Take out the trash', complete: false},
+              {id:2, task: 'Feed The Cats', complete: false},
+              {id:3, task: 'Make copies of the house keys', complete: false},
             ]
     }
   }
@@ -17,7 +17,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Todo todos={this.state.todos}/>
+        <TodoList todos={this.state.todos}/>
       </div>
     );
   }
