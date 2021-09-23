@@ -36,6 +36,13 @@ function Todo() {
                         </div>
                     </ul>
                 </div>
+                
+                {/* Buttons */}
+                <div className="my-6  w-10/12 mx-auto flex justify-between">
+                    <button type="button" className="w-3/12 text-xs bg-blue-400">Add Todo</button>
+                    <button type="button" className="w-3/12 text-xs bg-yellow-400">Edit</button>
+                    <button type="button" className="w-3/12 text-xs bg-green-500"> Complete</button>
+                </div>
             </div>
         </div>
     )
