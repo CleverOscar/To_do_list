@@ -2,7 +2,7 @@ import React from 'react';
 
 import TodoItems from './TodoItems';
 
-function Todo() {
+function Todo(props) {
     return(
         <div>
             {/* Title */}
@@ -17,7 +17,7 @@ function Todo() {
                 </div>
 
                 <div>
-                    <TodoItems />
+                        <TodoItems todos={props.todos}/>
                 </div>
                 
                 {/* Buttons */}
