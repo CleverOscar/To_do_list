@@ -1,27 +1,20 @@
 import React from 'react';
 
-function TodoItems (){
+function TodoItems (props){
+
+    const items = props.todos.map((item) => {
+        return <div key={item.id} className="flex flex-row items-center">
+                <li className="w-8/12">
+                    {item.task}
+                </li>
+                <input type="checkbox" />
+            </div>
+    })
+
     return(
         <div>
                 <ul className="text-base text-left pl-4 mt-4 tracking-wider">
-                    <div className="flex flex-row items-center">
-                        <li className="w-8/12">
-                            Take out the trash
-                        </li>
-                        <input className="w-3/12" type="checkbox" />
-                    </div>
-                    <div className="flex flex-row items-center">
-                        <li className="w-8/12">
-                            Feed the cats
-                        </li>
-                        <input className="w-3/12" type="checkbox" />
-                    </div>
-                    <div className="flex flex-row items-center">
-                        <li className="w-8/12">
-                            Make copy of the house keys
-                        </li>
-                        <input className="w-3/12" type="checkbox" />
-                    </div>
+                    {items}
                 </ul>
         </div>
     )

@@ -2,7 +2,8 @@ import React from 'react';
 
 import TodoItems from './TodoItems';
 
-function Todo(props) {
+function TodoList(props) {
+
     return(
         <div>
             {/* Title */}
@@ -31,9 +32,4 @@ function Todo(props) {
     )
 }
 
-
-function checkedOff(){
-    return console.log('clicked')
-}
-
-export default Todo
+export default TodoList
